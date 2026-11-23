@@ -1,0 +1,60 @@
+# --- Databricks CLI, Bundles & Local State ---
+.databricks/
+.bundle/
+.databrickscfg
+variable-overrides.json
+
+# --- Secrets & Environment Files ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Local Raw Data & Generated Batches (upload to Unity Catalog Volumes instead) ---
+data/
+raw_batches/
+*.csv
+*.parquet
+*.orc
+*.avro
+*.jsonl
+!tests/fixtures/*.json
+!tests/fixtures/*.csv
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.uv/
+.python-version
+
+# --- Packaging & Build Artifacts ---
+build/
+dist/
+*.egg-info/
+*.whl
+*.jar
+
+# --- Testing, Linting & Type Checking ---
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# --- Local Spark & Jupyter Artifacts ---
+spark-warehouse/
+metastore_db/
+derby.log
+.ipynb_checkpoints/
+
+# --- IDE & OS Files ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
