@@ -16,7 +16,6 @@ import random
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-
 from faker import Faker # type: ignore
 
 BASE_TIME = datetime(2026, 11, 1, 9, 0, 0, tzinfo=timezone.utc)
